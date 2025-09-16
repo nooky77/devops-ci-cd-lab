@@ -46,11 +46,11 @@ devops-v2/
    - Personnalisez le contenu selon les consignes du projet ([voir contenu-requis](contenu-requis.md))
 
    - Tester et valider vos modifications 
-      - docker-compose down
-      - git checkout -b new-branche  # a new branch per PR
+      - `docker-compose down`
+      - `git checkout -b new-branche`  # a new branch per PR
       - éditer vos modifications (pour l'instant vous mettez des valeurs approximatives)
-      - docker-compose up -d --build
-      - exécuter : docker exec -it devios-tp pytest -v
+      - `docker-compose up -d --build`
+      - exécuter : `docker exec -it devios-tp pytest -v`
       - exécuter : `docker exec -it devops-tp flake8 app.py test_app/py`~
       - si erreur, corriger et retester
       - Relancer : 
