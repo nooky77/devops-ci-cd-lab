@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps v2</title>
+</head>
+<body>
+    <header>
+        <h1>DevOps v2</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('groupe10') }}">Groupe 10</a></li>
+                <li><a href="{{ url_for('groupe20') }}">Groupe 20</a></li>
+                <li><a href="{{ url_for('groupe30') }}">Groupe 30</a></li>
+                <li><a href="{{ url_for('groupe40') }}">Groupe 40</a></li>
+                <li><a href="{{ url_for('groupe50') }}">Groupe 50</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 DevOps</p>
+    </footer>
+</body>
+</html>
