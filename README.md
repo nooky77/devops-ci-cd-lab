@@ -75,12 +75,16 @@ git push origin new-branch
    - Si le pipeline CI/CD est vert ✅, votre PR sera mergée
    - Sinon, corrigez les erreurs et recommencez
 
-7. **Données de Grafana**
-   - refaites les étapes précédentes en mettant les informations de votre machine à l'aide [Grafana](https://campusconnect.fr/mod/page/view.php?id=8201)
+7. **Tester un refus de merge**
+   - Insérer une erreur dans app.py 
+   - Tester le refus de la fusion de vos modification dans le dépôt origine.
+
+8. **Mise à jour de votre page**
+   - Mettre à jour votre page en mettant les informations de votre machine à l'aide [Grafana](https://campusconnect.fr/mod/page/view.php?id=8201)
 
 ### Livraison attendue
-- Un seul fichier modifié : `templates/groupeYY.html`
-- Une Pull Request propre et validée par le pipeline CI/CD
+- Un seul fichier modifié avec les data Grafana: `templates/groupeYY.html`
+- Une Pull Request propre et validée par le pipeline CI/CD.
 
 ---
 
