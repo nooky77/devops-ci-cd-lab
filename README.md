@@ -80,7 +80,7 @@ git push origin new-branch
    - Tester le refus de la fusion de vos modification dans le dépôt origine.
 
 8. **Mise à jour de votre page**
-   - Mettre à jour votre page en mettant les informations de votre machine à l'aide [Grafana](https://campusconnect.fr/mod/page/view.php?id=8201)
+   - Mettre à jour votre page en mettant les informations de votre machine à l'aide [Grafana](Grafana.md)
 
 ### Livraison attendue
 - Un seul fichier modifié avec les data Grafana: `templates/groupeYY.html`
