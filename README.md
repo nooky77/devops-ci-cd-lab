@@ -46,11 +46,9 @@ devops-v2/
    - Personnalisez le contenu selon les consignes du projet ([voir contenu-requis](contenu-requis.md))
 
    - Tester et valider vos modifications 
-      ~- `docker exec -it devops-tp pytest -v `~
-      ~- `docker exec -it devops-tp flake8 app.py test_app/py`~
       - docker-compose down
       - git checkout -b new-branche  # a new branch per PR
-      - éditer vos modifications 
+      - éditer vos modifications (pour l'instant vous mettez des valeurs approximatives)
       - docker-compose up -d --build
       - exécuter : docker exec -it devios-tp pytest -v
       - exécuter : `docker exec -it devops-tp flake8 app.py test_app/py`~
@@ -76,6 +74,9 @@ git push origin new-branch
 6. **Validation**
    - Si le pipeline CI/CD est vert ✅, votre PR sera mergée
    - Sinon, corrigez les erreurs et recommencez
+
+7. **Données de Grafana**
+   - refaites les étapes précédentes en mettant les informations de votre machine à l'aide [Grafana](https://campusconnect.fr/mod/page/view.php?id=8201)
 
 ### Livraison attendue
 - Un seul fichier modifié : `templates/groupeYY.html`
