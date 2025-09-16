@@ -29,13 +29,13 @@ devops-v2/
 ### Étapes à suivre
 
 1. **Fork du dépôt parent**
-   - Rendez-vous sur le dépôt GitHub `devops-v2`
+   - Rendez-vous sur le dépôt GitHub `devops-ci-cd-lab`
    - Cliquez sur **Fork** pour créer votre propre copie
 
 2. **Cloner et tester votre fork localement**
    ```bash
-   git clone https://github.com/votre-utilisateur/devops-v2.git
-   cd devops-v2
+   git clone https://github.com/votrelogin/devops-ci-cd-lab.git
+   cd devops-ci-cd-lab
    docker-compose down
    docker-compose up -d --build
    curl localhost:5000
@@ -127,7 +127,7 @@ git push origin main
 - Ressource
   * Comment effectuer des tests unitaires dans Flask: https://fr.linux-console.net/?p=34043
   * https://dev.to/david_oyewole/automating-flask-deployment-with-github-actions-and-docker-4j1a
-  * 
+  
 
 
  -->
