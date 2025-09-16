@@ -1,6 +1,6 @@
 ##  Grafana-Prometheus
 
-L’article présente une solution de monitoring complète basée sur **Grafana**, **Prometheus**, **Alertmanager** et **Node Exporter**, idéale pour surveiller l’état des applications et de l’infrastructure en production.
+Ce texte présente une solution de monitoring complète basée sur **Grafana**, **Prometheus**, **Alertmanager** et **Node Exporter**, idéale pour surveiller l’état des applications et de l’infrastructure en production.
 
 ###  Composants principaux
 
