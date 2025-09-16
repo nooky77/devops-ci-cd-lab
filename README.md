@@ -46,25 +46,31 @@ devops-v2/
    - Personnalisez le contenu selon les consignes du projet ([voir contenu-requis](contenu-requis.md))
 
    - Tester et valider vos modifications 
-      - `docker exec -it devops-tp pytest -v `
-      - `docker exec -it devops-tp flake8 app.py test_app/py`
+      ~- `docker exec -it devops-tp pytest -v `~
+      ~- `docker exec -it devops-tp flake8 app.py test_app/py`~
+      - docker-compose down
+      - git checkout -b new-branche  # a new branch per PR
+      - éditer vos modifications 
+      - docker-compose up -d --build
+      - exécuter : docker exec -it devios-tp pytest -v
+      - exécuter : `docker exec -it devops-tp flake8 app.py test_app/py`~
       - si erreur, corriger et retester
       - Relancer : 
             1) `docker-compose down` 
             2) `docker-compose up -d --build`
       - Vérifier : `curl localhots:5000`
-
+      
 4. **Commit & Push**
 ```bash
 git add templates/groupeYY.html
 
 git commit -m "votre commentaire"
 
-git push origin main
+git push origin new-branch
 ```
 
 5. **Créer une Pull Request**
-   - Vérifiez que les tests CI/CD passent (GitHub Actions) 
+   - Vérifiez que les tests CI/CD passent (GitHub Actions)
    - Depuis GitHub, ouvrez une **Pull Request** vers le dépôt parent ([voir § Téléverser vos changements dans Fiche-CI.md](./Fiche-CI.md))
 
 6. **Validation**
