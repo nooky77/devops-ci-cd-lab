@@ -22,13 +22,13 @@ Ce texte présente une solution de monitoring complète basée sur **Grafana**, 
 
 1. **Cloner le dépôt Git contenant tous les fichiers nécessaires** :
    ```bash
-   git clone https://github.com/thakarprathamesh/monitoring-stack.git
-   cd monitoring-stack
+   git clone https://github.com/stefanprodan/dockprom
+   cd dockprom
    ```
 
 2. **Lancer les services avec Docker Compose** :
    ```bash
-   docker-compose -f monitoring-docker-compose.yaml up -d
+   docker-compose up -d
    ```
 
 ###  Accès aux interfaces
@@ -39,7 +39,11 @@ Ce texte présente une solution de monitoring complète basée sur **Grafana**, 
 
 ---
 
-##  Comment importer un dashboard dans Grafana
+## Dashboard Docker Host
+- Home --> Dashboards --> Docker Host
+- **Remarque** : un autre dashboard est inclus : Docker Containers pour le reporting sur les dockers
+
+##  (optionnel) Comment importer un dashboard dans Grafana
 
 1. Ouvrir Grafana → **Dashboards → Import**
 2. Choisir :
