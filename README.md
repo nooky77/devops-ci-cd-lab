@@ -34,7 +34,7 @@ devops-v2/
 
 2. **Cloner et tester votre fork localement**
    ```bash
-   git clone https://github.com/votrelogin/devops-ci-cd-lab.git
+   git clone git@github.com:loginname/devops-ci-cd-lab.git   # attention c'est un lien SSH. Il se connecter à Github via SSH.
    cd devops-ci-cd-lab
    docker-compose down
    docker-compose up -d --build
