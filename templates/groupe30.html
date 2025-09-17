@@ -3,11 +3,59 @@
 {% block content %}
 
 
-<h2>tableau de bord du Groupe YY</h2>
+<h1>Tableau de bord Grafana du Groupe 30..</h1>
 
-<p>votre contenu ici</p>
+<h2>Surveillance du système</h2>
+<p>Voici quelques métriques système simulées :</p>
+<ul>
+  <li>Utilisation CPU : 42.92%</li>
+  <li>Utilisation mémoire : 376.50 MiB / 16 Go</li>
+  <li>Espace disque : 78 Go libres sur 512 Go</li>
+  <li>Uptime : 4h22</li>
+</ul>
+<p>Ces valeurs pourraient être mises à jour dynamiquement à l’aide de la bibliothèque <code>psutil</code> de Python.</p>
 
-<p>.....</p>
+
+<h2>Gestion des utilisateurs</h2>
+<p>Utilisateurs actuels du système :</p>
+<ul>
+  <li>admin</li>
+  <li>Youcef</li>
+  <li>Guillaume</li>
+</ul>
+<p>Utilisez les boutons ci-dessous pour simuler l’ajout ou la suppression d’utilisateurs.</p>
+<button>Ajouter un utilisateur</button>
+<button>Supprimer un utilisateur</button>
+
+<h2>Journaux du système</h2>
+<p>Entrées récentes du journal :</p>
+<pre>
+[INFO] Démarrage du système terminé
+[AVERTISSEMENT] Utilisation du disque à 85%
+[ERREUR] Échec de la connexion au serveur de sauvegarde
+</pre>
+<p>Filtrez les journaux par gravité ou par date pour simuler une analyse des logs.</p>
+
+
+<h2>État du réseau</h2>
+<p>Configuration réseau actuelle :</p>
+<ul>
+  <li>Adresse IP : 172.31.0.22</li>
+  <li>Passerelle : 172.31.3.254</li>
+  <li>DNS : 1.1.1.1</li>
+</ul>
+<p>Simulez ici des tests de ping ou des vérifications de l’état des interfaces.</p>
+
+<code>
+  PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.<br>
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=55 time=7.52 ms<br>
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=55 time=7.75 ms<br>
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=55 time=7.82 ms<br>
+64 bytes from 1.1.1.1: icmp_seq=4 ttl=55 time=7.73 ms<br>
+--- 1.1.1.1 ping statistics ---<br>
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms<br>
+rtt min/avg/max/mdev = 7.523/7.705/7.820/0.110 ms<br>
+</code>
 
 
 {% endblock %}
